@@ -8,6 +8,10 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-geist-sans)']
       },
+      colors: {
+        'custom-bg': '#f7f7f7', 
+        'button-bg': "#79b486"
+      },
       keyframes: {
         fadeIn: {
           from: { opacity: '0' },

@@ -46,7 +46,7 @@ export async function ThreeItemGrid() {
   const homepageItems = await getCollectionProducts({
     collection: 'hidden-homepage-featured-items'
   });
-
+  console.log("homepageItems....", homepageItems)
   if (!homepageItems[0] || !homepageItems[1] || !homepageItems[2]) return null;
 
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
