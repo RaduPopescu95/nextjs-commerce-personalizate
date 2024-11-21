@@ -19,3 +19,14 @@ input,
 button {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50 dark:focus-visible:ring-neutral-600 dark:focus-visible:ring-offset-neutral-900;
 }
+
+/* Ascunde scrollbar-ul în browserele bazate pe WebKit */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dezactivează scrollbar-ul în alte browsere */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
